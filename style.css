@@ -1,0 +1,266 @@
+:root{
+    --Red-: 0, 78%, 62%;
+    --Cyan-: 180, 62%, 55%;
+    --Orange-: 34, 97%, 64%;
+    --Blue-: 212, 86%, 64%;
+    --VeryDarkBlue-: 234, 12%, 34%;
+    --GrayishBlue-: 229, 6%, 66%;
+    --VeryLightGray-: 0, 0%, 98%;
+    --font-: 'Poppins', sans-serif;
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+body, div, img, p, b{
+    margin: 0;
+    
+    padding: 0;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: hsl(var(--VeryLightGray-));
+    font-family: var(--font-);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text > .p1{
+    font-size: 19px;
+    margin-bottom: 5px;
+    color: rgb(129, 128, 125);
+}
+
+.text > b{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.text > .p2{
+    text-align:center;
+    max-width: 350px;
+    font-size: 12px;
+    color: rgb(129, 128, 125);
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+.card{
+    margin: 30px;
+}
+
+.card-1{
+    box-shadow: 1px 4px 6px rgb(126, 123, 123);
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-top: 3px solid rgb(69, 211, 211);
+}
+
+.card-1 > p{
+    font-size: 10px;
+    max-width: 180px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    color: hsl(var(--GrayishBlue-));
+}
+
+.card-1 > b{
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.card-1 > img{
+    padding-left: 160px;
+    margin-bottom: 30px;
+}
+
+.card-23{
+    margin: 10px;
+}
+
+.card-2{
+    box-shadow: 1px 4px 6px rgb(126, 123, 123);
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-top: 3px solid rgb(235, 84, 84);
+    margin-bottom: 10px;
+}
+
+.card-2 > p{
+    font-size: 10px;
+    max-width: 180px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    color: hsl(var(--GrayishBlue-));
+}
+
+.card-2 > b{
+    margin-top: 500px;
+    font-size: 12px;
+}
+
+.card-2 > img{
+    padding-left: 160px;
+    margin-bottom: 30px;
+}
+
+.card-3{
+    box-shadow: 1px 4px 6px rgb(126, 123, 123);
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-top: 3px solid rgb(252, 175, 74);
+    margin-top: 15px;
+}
+
+.card-3 > p{
+    font-size: 10px;
+    max-width: 180px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    color: hsl(var(--GrayishBlue-));
+}
+
+.card-3 > b{
+    margin-top: 500px;
+    font-size: 12px;
+}
+
+.card-3 > img{
+    padding-left: 160px;
+    margin-bottom: 30px;
+}
+
+.card-4{
+    box-shadow: 1px 4px 6px rgb(126, 123, 123);
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-top: 3px solid rgb(84, 158, 242);
+}
+
+.card-4 > p{
+    font-size: 10px;
+    max-width: 180px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    color: hsl(var(--GrayishBlue-));
+}
+
+.card-4 > b{
+    margin-top: 500px;
+    font-size: 12px;
+}
+
+.card-4 > img{
+    padding-left: 160px;
+    margin-bottom: 30px;
+}
+
+
+
+
+@media (max-width:320px){
+    .main-container{
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text > .p2{
+        max-width: 200px;
+    }
+
+    .card, .card-1, .card-2, .card-3, .card-4{
+        margin: 10px;
+    }
+}
+
+@media (max-width:425px){
+    .main-container{
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text > .p2{
+        max-width: 200px;
+    }
+
+    .card, .card-1, .card-2, .card-3, .card-4{
+        margin: 10px;
+    }
+
+    .card-23{
+        margin: 0px;
+    }
+}
+
+@media (max-width:375px){
+    .main-container{
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text > .p2{
+        max-width: 200px;
+    }
+
+    .card, .card-1, .card-2, .card-3, .card-4{
+        margin: 10px;
+    }
+
+    .card-23{
+        margin: 0px;
+    }
+}
